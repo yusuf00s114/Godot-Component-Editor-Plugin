@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://jfa2eepquael"]
+
+[ext_resource type="Script" uid="uid://ch6o4lfdrugvg" path="res://health_component.gd" id="1_oq1cg"]
+[ext_resource type="Script" uid="uid://q3u1muwwf4f4" path="res://addons/component_editor/component.gd" id="1_y4s02"]
+[ext_resource type="Script" uid="uid://by1tftmjp8tgx" path="res://damage_component.gd" id="2_j7wxn"]
+[ext_resource type="Script" uid="uid://gds12jn6gguv" path="res://knockback_component.gd" id="3_y4s02"]
+
+[node name="LotsOfComponents" type="Node2D"]
+
+[node name="Components" type="Node" parent="."]
+script = ExtResource("1_y4s02")
+metadata/_custom_type_script = "uid://q3u1muwwf4f4"
+
+[node name="HealthComponent" type="Node" parent="Components"]
+script = ExtResource("1_oq1cg")
+metadata/_custom_type_script = "uid://ch6o4lfdrugvg"
+
+[node name="DamageComponent" type="Node" parent="Components"]
+script = ExtResource("2_j7wxn")
+lore = "<null>"
+metadata/_custom_type_script = "uid://by1tftmjp8tgx"
+
+[node name="KnockbackComponent" type="Node" parent="Components"]
+script = ExtResource("3_y4s02")
+acceleration_curve = 0.1
+metadata/_custom_type_script = "uid://gds12jn6gguv"

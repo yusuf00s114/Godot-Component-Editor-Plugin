@@ -6,4 +6,4 @@ extends Node
 @export var death_message: String
 
 func _init() -> void:
-	print("Health initalized")
+	pass
